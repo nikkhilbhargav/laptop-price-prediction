@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Laptop Price Prediction</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static',filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Laptop Price Prediction</h1>
+
+<form action="/predict" method="POST">
+
+<label>Brand</label>
+<input type="text" name="brand" required>
+
+<label>Specification Rating</label>
+<input type="number" step="0.1" name="spec_rating" required>
+
+<label>Processor</label>
+<input type="text" name="processor" required>
+
+<label>CPU</label>
+<input type="text" name="CPU" required>
+
+<label>RAM</label>
+<input type="text" name="Ram" required>
+
+<label>RAM Type</label>
+<input type="text" name="Ram_type" required>
+
+<label>ROM</label>
+<input type="text" name="ROM" required>
+
+<label>ROM Type</label>
+<input type="text" name="ROM_type" required>
+
+<label>GPU</label>
+<input type="text" name="GPU" required>
+
+<label>Display Size</label>
+<input type="number" step="0.1"
+name="display_size" required>
+
+<label>Resolution Width</label>
+<input type="number"
+name="resolution_width" required>
+
+<label>Resolution Height</label>
+<input type="number"
+name="resolution_height" required>
+
+<label>Operating System</label>
+<input type="text" name="OS" required>
+
+<label>Warranty (Years)</label>
+<input type="number" name="warranty" required>
+
+<input type="submit"
+value="Predict Price">
+
+</form>
+
+</div>
+
+</body>
+</html>
